@@ -30,7 +30,7 @@
 
         <div class="navbar-extra">
             <a href="#" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></a>
-            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#" id="shopping-cart-button"><i class="fa-solid fa-cart-shopping"></i></a>
             <a id="hamburger-menu"><i class="fa-solid fa-bars"></i></a>
         </div>
 
@@ -40,6 +40,35 @@
             <label for="search-box"><i class="fa-solid fa-magnifying-glass"></i></label>
         </div>
         <!-- search form end -->
+
+        <!-- shopping cart start -->
+        <div class="shopping-cart">
+            <div class="cart-item">
+                <img src="/img/product/product-1.jpg" alt="Product 1">
+                <div class="item-detail">
+                    <h3>Product 1</h3>
+                    <div class="item-price">IDR 30K</div>
+                </div>
+                <i class="fa-solid fa-trash-can remove-item"></i>
+            </div>
+            <div class="cart-item">
+                <img src="/img/product/product-1.jpg" alt="Product 1">
+                <div class="item-detail">
+                    <h3>Product 1</h3>
+                    <div class="item-price">IDR 30K</div>
+                </div>
+                <i class="fa-solid fa-trash-can remove-item"></i>
+            </div>
+            <div class="cart-item">
+                <img src="/img/product/product-1.jpg" alt="Product 1">
+                <div class="item-detail">
+                    <h3>Product 1</h3>
+                    <div class="item-price">IDR 30K</div>
+                </div>
+                <i class="fa-solid fa-trash-can remove-item"></i>
+            </div>
+        </div>
+        <!-- shopping cart end -->
     </nav>
     <!-- navbar end -->
 
@@ -120,7 +149,7 @@
             <div class="product-card">
                 <div class="product-icons">
                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                    <a href="#" class="item-detail-button"><i class="fa-solid fa-eye"></i></a>
                 </div>
                 <div class="product-image">
                     <img src="/img/product/product-1.jpg" alt="product 1">
@@ -140,7 +169,7 @@
             <div class="product-card">
                 <div class="product-icons">
                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                    <a href="#" class="item-detail-button"><i class="fa-solid fa-eye"></i></a>
                 </div>
                 <div class="product-image">
                     <img src="/img/product/product-1.jpg" alt="product 1">
@@ -160,7 +189,7 @@
             <div class="product-card">
                 <div class="product-icons">
                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                    <a href="#" class="item-detail-button"><i class="fa-solid fa-eye"></i></a>
                 </div>
                 <div class="product-image">
                     <img src="/img/product/product-1.jpg" alt="product 1">
@@ -231,6 +260,30 @@
         </div>
     </footer>
     <!-- footer end -->
+
+    <!-- modal box item detail start -->
+    <div class="modal" id="item-detail-modal">
+        <div class="modal-container">
+            <a href="#" class="close-icon"><i class="fa-solid fa-circle-xmark"></i></a>
+            <div class="modal-content">
+                <img src="/img/product/product-1.jpg" alt="Product 1">
+                <div class="product-content">
+                    <h3>Coffee 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe aperiam ea cumque suscipit quasi hic, voluptatem officia, fugiat nisi velit, maxime esse incidunt cum temporibus.</p>
+                    <div class="product-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="product-price">IDR 30K <span>IDR 50K</span></div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i> <span>add to cart</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal box item detail end -->
 
 
 
